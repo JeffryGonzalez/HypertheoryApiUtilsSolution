@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>HypertheoryApiUtils</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Jeff Gonzalez</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/JeffryGonzalez/HypertheoryApiUtilsSolution</PackageProjectUrl>
+    
   </PropertyGroup>
 
   <ItemGroup>
