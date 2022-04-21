@@ -28,12 +28,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Publish Nuget
-      id: publish_nuget
-      uses: rohith/publish-nuget@v2
-      with: 
-        PROJECT_FILE_PATH: HypertheoryApiUtils/HypertheoryApiUtils.csproj
-        
-        PACKAGE_NAME: HypertheoryApiUtils
-        NUGET_KEY: ${{ secrets.NUGET_KEY }}
+
+    - name: Package
+      run: dotnet pack -c Release -o . HypertheoryApiUtils.csproj
+    - name: Publish
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
         
