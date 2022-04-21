@@ -33,6 +33,6 @@ jobs:
       uses: rohith/publish-nuget@v2
       with: 
         PROJECT_FILE_PATH: HypertheoryApiUtils/HypertheoryApiUtils.csproj
-        PACKAGE_NAME: ApiUtils
+        PACKAGE_NAME: HypertheoryApiUtils
         NUGET_KEY: ${{ secrets.NUGET_KEY }}
         
