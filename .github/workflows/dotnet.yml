@@ -32,5 +32,5 @@ jobs:
     - name: Package
       run: dotnet pack -c Release -o . HypertheoryApiUtils.csproj
     - name: Publish
-      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json -SkipDuplicate
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
         
