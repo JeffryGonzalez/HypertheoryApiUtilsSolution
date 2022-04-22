@@ -1,4 +1,4 @@
-﻿namespace TodosApi;
+﻿namespace HypertheoryApiUtils;
 
 public class MongoConnectionOptions
 {
